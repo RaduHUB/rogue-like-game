@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ---------- JUST META TAGS, NOTHING TO SEE HERE ---------- -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <meta name="description" content="A simple home-made game" />
+    <link rel="canonical" href="./index.html" />
+    <title>NON-LETHAL KOMBAT</title>
+    <!-- Name of the game -->
+  </head>
+  <body>
+    <div class="mainContainer">
+      <!-- ----------------------------------------- -->
+      <!-- ---------- charecter container ---------- -->
+      <!-- ----------------------------------------- -->
+      <div class="characterContainer">
+        <!-- -------------------- -->
+        <div class="playerContainer">
+          <h1 class="playerName">
+            Radu
+            <!-- player's name -->
+          </h1>
+          <img class="player" src="./assets/scorpion.webp" alt="scorpion" />
+        </div>
+        <!-- -------------------- -->
+        <div class="enemyContainer">
+          <h1 class="enemyName">
+            Mircea
+            <!-- randomly picked name from a list -->
+          </h1>
+          <img class="enemy" src="./assets/sub-zero.webp" alt="sub-zero" />
+        </div>
+      </div>
+
+      <div class="actionsContainer">
+        <!-- --------------------------------------- -->
+        <!-- ---------- actions container ---------- -->
+        <!-- --------------------------------------- -->
+        <button class="attackButton">ATTACK!</button>
+        <button class="healButton">HEAL!</button>
+        <button class="passButton">NEXT TURN!</button>
+      </div>
+      <div class="statsContainer">
+        <p>display of stats, last turn, and some other things</p>
+      </div>
+    </div>
+    <script src="./javascript.js"></script>
+  </body>
+</html>
