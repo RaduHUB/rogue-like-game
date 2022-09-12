@@ -24,6 +24,10 @@
             <!-- player's name -->
           </h1>
           <img class="player" src="./assets/scorpion.webp" alt="scorpion" />
+          <p>
+            Your life:
+            <span>100</span>
+          </p>
         </div>
         <!-- -------------------- -->
         <div class="enemyContainer">
@@ -32,6 +36,10 @@
             <!-- randomly picked name from a list -->
           </h1>
           <img class="enemy" src="./assets/sub-zero.webp" alt="sub-zero" />
+          <p>
+            Enemy's life:
+            <span class="hitPoints">100</span>
+          </p>
         </div>
       </div>
 
@@ -39,14 +47,11 @@
         <!-- --------------------------------------- -->
         <!-- ---------- actions container ---------- -->
         <!-- --------------------------------------- -->
-        <button class="attackButton">ATTACK!</button>
-        <button class="healButton">HEAL!</button>
-        <button class="passButton">NEXT TURN!</button>
+        <button onclick="attack()" class="attackButton">ATTACK!</button>
+        <button onclick="heal()" class="healButton">HEAL!</button>
+        <button onclick="nextRound()" class="passButton">NEXT TURN!</button>
       </div>
-      <div class="statsContainer">
-        <p>display of stats, last turn, and some other things</p>
-        <p>commit test</p>
-      </div>
+      <div class="statsContainer"></div>
     </div>
     <script src="./javascript.js"></script>
   </body>
